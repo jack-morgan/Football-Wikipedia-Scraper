@@ -2,7 +2,7 @@ import csv
 import wikipedia
 from bs4 import BeautifulSoup
 
-with open("fp.csv", "w") as fp:
+with open("playerhistory.csv", "w") as fp:
     a = csv.writer(fp)
     a.writerow("")
     
@@ -52,7 +52,7 @@ for footballer_name in footballer_names:
 #   datafooty = footballer_name + " played for: " + ', '.join(array)
 #   datafooty = datafooty.encode('ascii', 'replace')
 #   print (datafooty)
-  with open("fp.csv", "a") as fp:
+  with open("playerhistory.csv", "a") as fp:
     a = csv.writer(fp)
     a.writerow(array)
 
